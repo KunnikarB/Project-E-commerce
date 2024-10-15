@@ -127,13 +127,30 @@
 }
 
 /* Responsive Contact */
-@media only screen and (max-width: 996px) {
+@media screen and (max-width: 996px) {
   .contact {
-    padding: 8rem 8rem;
+    padding: 10rem 1rem;
+    margin-bottom: 8rem;
+    width: 80%;
+    margin: 0 auto;
   }
+  .contact .row {
+    grid-template-columns: 1fr;
+    gap: 5rem 0;
+  }
+
+  .contact form div {
+    width: 100%;
+  }
+  
 }
 
 @media only screen and (max-width: 768px) {
+
+  .contact {
+    padding: 8rem 2rem;
+    margin-bottom: 8rem;
+  }
   .contact .row {
     grid-template-columns: 1fr;
     gap: 5rem 0;
@@ -148,6 +165,7 @@
   
   .contact {
     padding: 8rem 1rem;
+    margin-bottom: 8rem;
 
     & .row .col h2 {
       font-size: 1.5rem;
@@ -156,7 +174,40 @@
     & .row .col p {
       font-size: 1rem;
       text-align: center;
-    } 
+    }
+
+  }
+  .contact .row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact form div {
+    width: 100%;
+  }
+
+  .contact form div label {
+    font-size: 1rem;
+  }
+
+  .contact form div input[type='email']::placeholder {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+
+  .contact form div input[type='submit'] {
+    width: 50%;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    position: static;
+    margin: 5% auto;
+  }
+  .contact .btn-1 {
+    width: 50%;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    margin: 0 auto;
   }
 }
 
@@ -258,22 +309,10 @@
 }
 
 @media screen and (max-width: 320px) {
-
-  .contact .row{
-    padding: 1rem;
-  }
-
-  .contact .row .col {
-    margin: 0 auto;
-  }
-
-  .contact .row .col p {
+  .contact {
     width: 100%;
-    margin-left: 0;
-  }
-
-  .contact .row .col h2 {
-    font-size: 1.5rem;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .contact .row .col a {
@@ -281,16 +320,12 @@
     font-size: 1rem;
   }
 
-
-
   .contact .row .col p {
     font-size: 1.2rem;
   }
 
   .contact form div {
-    width: 100%;
-    margin: 0 auto;
-    
+    width: 100%; 
   }
 
   .contact form div label {
@@ -299,7 +334,7 @@
   }
 
   .contact form div input {
-    padding: 0.5rem 0;
+    padding: 0;
   }
   .contact form div input[type='email']::placeholder {
     font-size: 0.8rem;
@@ -312,5 +347,8 @@
     position: static;
     margin: 5% auto;
   }
-  
+  .contact .btn-1 {
+    width: 50%;
+    font-size: 0.8rem;
+  }
 }
