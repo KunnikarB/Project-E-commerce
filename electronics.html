@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/6c722e42cf.js" crossorigin="anonymous"></script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+<!-- Normalize CSS -->
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+  <!-- Styles -->
+  <link rel="stylesheet" href="Styles/style.css">
+  <link rel="stylesheet" href="Styles/products.css">
+  <title>K-Commerce</title>
+  
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="container-header">
+    <div class="header">
+    <a href="./index.html">
+    <img class="logo" src="images/logo.png" alt="k-commerce logo"></a>
+  
+    <nav>
+      <ul class="navigation nav-list">
+        <li class="navigation__link nav-item">
+          <a href="./index.html">Home 
+            <i class="fa-solid fa-house-chimney-window"></i> 
+          </a>
+        </li>
+
+        <li class="navigation__link nav-item">
+          <a href="#">Electronics 
+            <i class="fa-solid fa-computer"></i>
+          </a>
+        </li>
+
+        <li class="navigation__link nav-item">
+          <a href="./clothing.html">Fashion 
+            <i class="fa-solid fa-tshirt"></i> 
+          </a>
+        </li>
+      </ul>
+    </nav>
+  
+    <div class="header-right">
+      <a href="./login.html">
+        <i class="fa-solid fa-user fa-2x"></i>
+      </a>
+      <div class="icon--cart">
+        <a href="#">
+          <i class="fa-solid fa-cart-shopping fa-2x">
+            <span class="icon--cart-quantity ">0</span>
+          </i>
+        </a> 
+      </div>
+
+      <div class="hamburger">
+          <a href="#">
+            <i class="fa-solid fa-bars fa-2x burger"></i>
+            <span class="xmark"><i class="fa-solid fa-xmark fa-2x close"></i></span>
+          </a>
+        </div>
+    </div>
+  </div>
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>
+  </header>
+<!-- End Of Header -->
+
+  
+
+<!-- Hero Section -->
+  <main class="container">
+    <button class="darkmode-button">Dark Mode</button>
+
+    <section class="hero">
+    <h1 class="hero__header">Electronics  🍎</h1>
+
+    <section class="electronics--hero"></section>
+
+      <h2 class="hero__content">All the latest picked from of our store, buy mac or iPad with education savings</h2>
+
+<!-- Categories Section -->
+    <section class="section">
+      <div class="cat-center">
+        
+        <div class="cat">
+          <img src="./images/Mac.png" alt="laptop" />
+          <div>
+            <p>Mac</p>
+          </div>
+        </div>
+        <div class="cat">
+          <img src="./images/Watch.png" alt="" />
+          <div>
+            <p>ACCESSORIES</p>
+          </div>
+        </div>
+        <div class="cat">
+          <img src="./images/iPhone.png" alt="" />
+          <div>
+            <p>iPhone</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Of Categories Section -->
+      
+    <div class="hero__sidebar">
+     <div class="search" >
+        <h3>All the products</h3>
+        <form >
+          <i class="fa-solid fa-search"></i>
+          <input type="text" id="search-item" placeholder="Search products">
+        </form>
+     </div>
+
+      <div class="sort" >
+        <label class="sort__label" for="filter">Sort by:</label>
+          <select class="sort__select" id="sort-electronics">
+            <option class="sort__select-option" value="price-asc">Price: Low to High</option>
+            <option class="sort__select-option" value="price-desc">Price: High to Low</option>
+          </select>
+      </div>   
+    </div>
+  </section> 
+  
+<!-- End Of Hero Section -->
+
+<!-- Product Section -->
+    <section class="products" id="products-list"> 
+      <div class="products--list" id="electronics-products">
+      <div class="product">
+        <div class="product--overlay product-item">
+          <img class="product--img" src="images/electronic-01.jpg" alt="MacBook Pro 14">
+          <span class="product--discount">40%</span>
+          <ul class="icons">
+              <li> <i class="fa-regular fa-heart"></i></li>
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+              <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </div>
+          <h4 class="product--name">MacBook Pro 14</h4>
+          <p class="product--description">The most advanced Mac laptops</p>
+          <p class="product--price">Price: $1599</p>
+
+          <div class="product--quantity">
+            <label for="quantity">Quantity:</label>
+            <select>
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class ="added-to-cart" >
+            <img src="./images/checkmark.png" alt="checked">
+            <p>Added</p>
+          </div>
+
+          <button class="product--add-to-cart-button card">Add to cart</button>  
+      </div>
+
+      <div class="product">
+        <div class="product--overlay product-item">
+          <img class="product--img" src="images/electronic-02.jpg" alt="iMac">
+          <span class="product--discount">New</span>
+          <ul class="icons">
+              <li> <i class="fa-regular fa-heart"></i></li>
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+              <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </div>
+          <h4 class="product--name">iMac</h4>
+          <p class="product--description">More apps for iMac than ever before</p>
+          <p class="product--price">Price: $1299</p>
+
+          <div class="product--quantity">
+            <label for="quantity">Quantity:</label>
+            <select>
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class ="added-to-cart" >
+            <img src="./images/checkmark.png" alt="checked">
+            <p>Added</p>
+          </div>
+
+          <button class="product--add-to-cart-button card">Add to cart</button>  
+      </div>
+
+      <div class="product">
+        <div class="product--overlay product-item">
+          <img class="product--img" src="images/electronic-03.jpg" alt="iPHONE">
+          <span class="product--discount">40%</span>
+          <ul class="icons">
+              <li> <i class="fa-regular fa-heart"></i></li>
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+              <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </div>
+          <h4 class="product--name">iPHONE</h4>
+          <p class="product--description">AI-openting possibilities</p>
+          <p class="product--price">Price: $990</p>
+
+          <div class="product--quantity">
+            <label for="quantity">Quantity:</label>
+            <select>
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class ="added-to-cart" >
+            <img src="./images/checkmark.png" alt="checked">
+            <p>Added</p>
+          </div>
+
+          <button class="product--add-to-cart-button card">Add to cart</button>  
+      </div>
+
+      <div class="product">
+        <div class="product--overlay product-item">
+          <img class="product--img" src="images/electronic-04.jpg" alt="APPLE WATCH">
+          <span class="product--discount">20%</span>
+          <ul class="icons">
+              <li> <i class="fa-regular fa-heart"></i></li>
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+              <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </div>
+          <h4 class="product--name">APPLE WATCH</h4>
+          <p class="product--description">The ultimate device for a healthy life</p>
+          <p class="product--price">Price: $240</p>
+
+          <div class="product--quantity">
+            <label for="quantity">Quantity:</label>
+            <select>
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class ="added-to-cart">
+            <img src="./images/checkmark.png" alt="checked">
+            <p>Added</p>
+          </div>
+
+          <button class="product--add-to-cart-button card">Add to cart</button>  
+      </div>
+
+      <div class="product">
+        <div class="product--overlay product-item">
+          <img class="product--img" src="images/electronic-05.jpg" alt="iPad Pro">
+          <span class="product--discount">50%</span>
+          <ul class="icons">
+              <li> <i class="fa-regular fa-heart"></i></li>
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+              <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </div>
+          <h4 class="product--name">iPad Pro</h4>
+          <p class="product--description">The most advanced technology</p>
+          <p class="product--price">Price: $999</p>
+
+          <div class="product--quantity">
+            <label for="quantity">Quantity:</label>
+            <select>
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class ="added-to-cart" >
+            <img src="./images/checkmark.png" alt="checked">
+            <p>Added</p>
+          </div>
+
+          <button class="product--add-to-cart-button card">Add to cart</button>  
+      </div>
+
+      <div class="product">
+        <div class="product--overlay product-item">
+          <img class="product--img" src="images/electronic-06.png" alt="HomePod">
+          <span class="product--discount">New</span>
+          <ul class="icons">
+              <li> <i class="fa-regular fa-heart"></i></li>
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+              <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </div>
+          <h4 class="product--name">HomePod</h4>
+          <p class="product--description">Immersive, high-fidelity audio</p>
+          <p class="product--price">Price: $299</p>
+
+          <div class="product--quantity">
+            <label for="quantity">Quantity:</label>
+            <select>
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class ="added-to-cart" >
+            <img src="./images/checkmark.png" alt="checked">
+            <p>Added</p>
+          </div>
+
+          <button class="product--add-to-cart-button card">Add to cart</button>  
+      </div>
+
+      <div class="product">
+        <div class="product--overlay product-item">
+          <img class="product--img" src="images/electronic-07.png" alt="HomePod Mini">
+          <span class="product--discount">New</span>
+          <ul class="icons">
+              <li> <i class="fa-regular fa-heart"></i></li>
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+              <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </div>
+          <h4 class="product--name">HomePod Mini</h4>
+          <p class="product--description">Surprising sound for its size</p>
+          <p class="product--price">Price: $99</p>
+
+          <div class="product--quantity">
+            <label for="quantity">Quantity:</label>
+            <select>
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class ="added-to-cart" >
+            <img src="./images/checkmark.png" alt="checked">
+            <p>Added</p>
+          </div>
+
+          <button class="product--add-to-cart-button card" >Add to cart</button>  
+      </div>
+
+      <div class="product">
+        <div class="product--overlay product-item">
+          <img class="product--img" src="images/electronic-08.png" alt="Vission Pro">
+          <span class="product--discount">New</span>
+          <ul class="icons">
+              <li> <i class="fa-regular fa-heart"></i></li>
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+              <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </ul>
+        </div>
+          <h4 class="product--name">Vission Pro</h4>
+          <p class="product--description">The ultimate theater wherever you are</p>
+          <p class="product--price">Price: $3499</p>
+
+          <div class="product--quantity">
+            <label for="quantity">Quantity:</label>
+            <select>
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+
+          <div class ="added-to-cart" >
+            <img src="./images/checkmark.png" alt="checked">
+            <p>Added</p>
+          </div>
+
+          <button class="product--add-to-cart-button card">Add to cart</button>  
+      </div>
+      </div>
+    </section>    
+  </main>
+<!-- End Of Product Section -->
+
+<!-- Footer Section -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col d-flex">
+          <h4>INFORMATION</h4>
+          <a href="">About us</a>
+          <a href="">Contact Us</a>
+          <a href="">Shipping Guide</a>
+          <a href="">Term &amp; Conditions</a>
+        </div>
+        <div class="col d-flex">
+          <h4>USEFUL LINK</h4>
+          <a href="">Online Store</a>
+          <a href="">Promotion</a>
+          <a href="">Top Brands</a>
+          <a href="">Customer Services</a>
+        </div>
+      </div>
+      <div class="copy">
+        <p>
+          &copy; 2024  <a href="index.html">K-vintage</a> | All right reserved.
+        </p>
+        <div class="icons">
+          <a href="https://www.facebook.com/KunnikarB/" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a
+          >
+
+          <a href="https://www.instagram.com/kunnikar_b/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i>
+          </a>
+          
+          <a href="mailto:k-vintagebutik@gmail.com"><i class="fa-solid fa-square-envelope fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>   
+<!-- End Of Footer Section -->
+  
+<!-- Scripts -->
+  <script src="Scripts/script.js"></script>
+</body>
+</html>
