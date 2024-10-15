@@ -267,13 +267,18 @@ ul {
 @media screen and (max-width: 768px) {
 
   .container {
-    padding: 150px 0;
-    margin: 0 auto;
+    padding: 0;
+    margin-top: 0;
+    width: 80%;
 
     .hero {
+      & .hero__header {
+        margin-bottom: 0.5rem;
+      }
       & .hero__content {
       font-size: 1.5rem;
-      width: 70%;
+      width: 100%;
+      margin-top: 0;
       }     
     }
   }    
@@ -307,7 +312,8 @@ ul {
 
 @media screen and (max-width: 567px) {
   .container {
-    padding: 200px 0;
+    padding: 0;
+    margin-top: 0;
   }
 }
 
