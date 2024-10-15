@@ -111,13 +111,14 @@ ul {
 .hero {
   & .hero__header {
     font-size: 2rem;
-    margin: 2rem 0;
+    margin-bottom: 2rem;
+
   }
 
   & .hero__content {
     display: inline-block;
     border-radius: 15px;
-    margin: 1.5rem;
+    margin: 3rem;
     font-size: 1.6rem;
     background: linear-gradient(90deg,
     rgb(252, 115, 156) 0%,
@@ -207,19 +208,19 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 120rem;
-    margin: auto;
-    padding: 0 3rem;
-    margin-right: 3rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
 
     & .cat {
       max-width: 35rem;
-      height: 30rem;
+      height: auto;
       overflow: hidden;
       position: relative;
       cursor: pointer;
       text-align: center;
-      margin-left: 1rem;
+      margin: 0 auto;
 
       & img {
         max-width: 400px;
