@@ -216,7 +216,8 @@ body {
       padding-right: 2rem;
     }
   } 
- }
+  }
+
 
 @media (max-width: 425px) {
   .header .logo {
