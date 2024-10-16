@@ -359,13 +359,6 @@ body {
   }
 }
 
-
-
-hr {
-  border: 1px solid var(--primary-color);
-  width: 100%;
-}
-
 /* Footer */
 .footer {
   display: flex;
