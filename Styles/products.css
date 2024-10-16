@@ -332,11 +332,10 @@ ul {
 @media screen and (max-width: 996px) {
   .container{
     width: 100%;
-  }
-
-  .hero__content {
-    font-size: 1.3rem;
-  }
+  & .hero__content {
+    font-size: 1.2rem;
+    }
+  }  
 }
 
 @media screen and (max-width: 768px) {
@@ -351,9 +350,10 @@ ul {
         margin-bottom: 0.5rem;
       }
       & .hero__content {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       width: 100%;
-      margin-top: 0;
+      margin: 0 auto;
+      margin-bottom: 1rem;
       }     
     }
   }    
