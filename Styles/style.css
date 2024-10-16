@@ -239,6 +239,118 @@ body {
 
 /* Main */
 
+/* Category Section */
+
+.section {
+  padding: 1rem 0;
+  overflow: hidden;
+
+  & .cat-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+
+    & .cat {
+      max-width: 35rem;
+      height: auto;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      text-align: center;
+      margin: 0 auto;
+
+      & img {
+        max-width: 400px;
+        width: 50rem;
+        height: 100%;
+        margin: auto;
+        object-fit: cover;
+        transition: all 2s ease;
+      }
+
+      & div {
+        position: absolute;
+        bottom: 1%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 12rem;
+        height: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        font-weight: 500;
+        background-color: rgba(221, 76, 147, 0.8);
+      }
+    }
+  }
+}
+
+.cat-center .cat:hover img {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .section {
+    padding: 1rem 0;
+
+    & .cat-center {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+
+      & .cat {
+        margin-bottom: 2rem;
+
+        & h2 {
+          font-size: 1.5rem;
+        }
+
+        & div {
+          width: 50%;
+          height: 3rem;
+          line-height: 3rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  } 
+}
+
+@media only screen and (max-width: 425px) {
+  .section {
+    padding: 0;
+
+    & .cat-center {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+
+      & .cat {
+
+        & .hero__content {
+          font-size: 1rem;
+        }
+
+        & img {
+          width: 100%;
+        }
+
+        & div {
+          width: 50%;
+          line-height: 3rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  } 
+}
+
+
 hr {
   border: 1px solid var(--primary-color);
   width: 100%;

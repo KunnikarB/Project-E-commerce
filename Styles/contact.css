@@ -127,12 +127,30 @@
 }
 
 /* Responsive Contact */
+@media screen and (max-width: 1024px) {
+  .contact {
+    padding: 8rem 1rem;
+    margin-bottom: 8rem;
+    width: 80%;
+    margin: 2rem auto;
+  }
+  .contact .row {
+    grid-template-columns: 1fr;
+    gap: 5rem 0;
+  }
+
+  .contact form div {
+    width: 100%;
+  }
+  
+}
+
 @media screen and (max-width: 996px) {
   .contact {
     padding: 10rem 1rem;
     margin-bottom: 8rem;
     width: 80%;
-    margin: 0 auto;
+    margin: 2rem auto;
   }
   .contact .row {
     grid-template-columns: 1fr;
@@ -149,6 +167,7 @@
 
   .contact {
     padding: 8rem 2rem;
+    width: 100%;
     margin-bottom: 8rem;
   }
   .contact .row {
@@ -244,6 +263,7 @@
 
   .contact form div input {
     padding: 0.5rem 0;
+    width: 70%;
   }
 
   .contact form div input[type='email']::placeholder {
