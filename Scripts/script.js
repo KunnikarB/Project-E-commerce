@@ -1,3 +1,19 @@
+// Popup
+const popup = document.querySelector('.popup');
+const closePopup = document.querySelector('.popup-close');
+
+if (popup) {
+  closePopup.addEventListener('click', () => {
+    popup.classList.add('hide-popup');
+  });
+
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      popup.classList.remove('hide-popup');
+    }, 1000);
+  });
+}
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () {
   myFunction();
@@ -11,7 +27,6 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById('myBar').style.width = scrolled + '%';
 }
-
 
 // slide show
 let slideIndex = 0;
