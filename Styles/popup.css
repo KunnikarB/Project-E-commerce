@@ -227,7 +227,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .poppu {
+  .popup {
     display: none;
   }
 }
