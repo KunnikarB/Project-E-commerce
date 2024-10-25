@@ -195,7 +195,7 @@ body {
  @media screen and (max-width: 768px) {
   .header {
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;  
   }
 
   .navigation {
@@ -211,15 +211,20 @@ body {
     display: flex;
     gap: 0;
     
-   
+    & .icon--cart {
+      margin-right: 2rem;
+      margin-top: 0.5rem;
+    }
+
     & .hamburger {
       display: block;
-      padding-right: 2rem;
-      font-size: 1.5rem;
+      padding-right: 1.5rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      margin-top: 0.5rem;
     }
   } 
   }
-
 
 @media (max-width: 425px) {
   .header .logo {
