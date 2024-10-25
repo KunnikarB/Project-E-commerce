@@ -1,5 +1,37 @@
 # E-commerce Project 🛍️
 
+
+## 🌸 JavaScript 🌸
+
+### 👉🏻 Generating DOM Elements, Dark Dode And Hamburger Nav
+
+#### Dark Mode
+  
+![Screenshot 2024-10-25 at 15 59 05](https://github.com/user-attachments/assets/7d14cd88-e69c-40ef-80c0-8c0d9ac90ce7)
+
+#### Generating DOM Elements
+
+ - Electronices Products
+   
+![Screenshot 2024-10-25 at 15 58 01](https://github.com/user-attachments/assets/5a6a955a-660b-4ac8-ba07-7eebca844a9a)
+
+- Clothing Products
+  
+  ![Screenshot 2024-10-25 at 15 58 43](https://github.com/user-attachments/assets/5255e6ef-8d38-48fa-a431-e0616b10d491)
+
+#### Hamburger Nav
+
+![Screenshot 2024-10-25 at 17 18 34](https://github.com/user-attachments/assets/56374f9a-650c-43f1-b22c-937dc78f7453)
+
+
+- onclick
+  
+![Screenshot 2024-10-25 at 17 11 53](https://github.com/user-attachments/assets/e97ebe61-186f-4aef-a00a-9f6c899ca645)
+
+
+***
+
+
 ## 🌸 HTML & CSS 🌸
 
 #### 👉🏻 Display a product with details like an image, name, price, description, and an "Add to Cart" button.
