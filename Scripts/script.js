@@ -1,3 +1,5 @@
+
+
 // Popup
 const popup = document.querySelector('.popup');
 const closePopup = document.querySelector('.popup-close');
@@ -28,12 +30,6 @@ function myFunction() {
   document.getElementById('myBar').style.width = scrolled + '%';
 }
 
-// Dark Mode
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle('dark-mode');
-}
-
 // slide show
 let slideIndex = 0;
 showSlides();
@@ -56,3 +52,4 @@ function showSlides() {
   dots[slideIndex - 1].className += ' active';
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
