@@ -1,7 +1,10 @@
-# E-commerce Project 🛍️
 
+ # E-commerce Project 🛍️
 
-## 🌸 JavaScript 🌸
+<br> <br>
+
+## :fire: JavaScript :fire:
+<br>
 
 ### 👉🏻 Generating DOM Elements, Dark Dode And Hamburger Nav
 
@@ -28,11 +31,13 @@
   
 ![Screenshot 2024-10-25 at 17 11 53](https://github.com/user-attachments/assets/e97ebe61-186f-4aef-a00a-9f6c899ca645)
 
-
+<br> <br>
 ***
-
+<br> <br>
 
 ## 🌸 HTML & CSS 🌸
+
+<br> 
 
 #### 👉🏻 Display a product with details like an image, name, price, description, and an "Add to Cart" button.
 
