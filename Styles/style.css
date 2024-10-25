@@ -108,7 +108,7 @@ body {
 
 /* Header Left Section */
 .logo {
-  width: 200px;
+  width: 80px;
   border-radius: 15px;
   cursor: pointer;
   transition: transform 0.5s;
@@ -127,7 +127,7 @@ body {
 
   & .navigation__link {
     margin-right: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     position: relative;
 
     & a {
@@ -140,7 +140,7 @@ body {
 
     & a i {
       color: var(--secondary-color);
-      font-size: 1rem;
+      font-size: 0.8rem;
       position: absolute;
       top: -4px;
       right: -20px;
@@ -171,6 +171,7 @@ body {
   & i {
     color: var(--text-color);
     position: relative;
+    font-size: 1.5rem;
   }
 
   & i:hover {
@@ -179,12 +180,12 @@ body {
 
   & i span {
     position: absolute;
-    top: -25px;
-    right: -18px;
+    top: -20px;
+    right: -13px;
     background-color: var(--secondary-color);
     color: var(--text-color);
     border-radius: 50%;
-    padding: 0.5rem;
+    padding: 0.3rem;
     font-size: 0.8rem;
     color: var(--primary-color);
   }
@@ -194,7 +195,7 @@ body {
  @media screen and (max-width: 768px) {
   .header {
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;  
   }
 
   .navigation {
@@ -202,7 +203,7 @@ body {
   }
 
   .header .logo {
-    width: 120px;
+    width: 80px;
     padding-left: 0.5rem;
   }
 
@@ -210,14 +211,20 @@ body {
     display: flex;
     gap: 0;
     
-   
+    & .icon--cart {
+      margin-right: 2rem;
+      margin-top: 0.5rem;
+    }
+
     & .hamburger {
       display: block;
-      padding-right: 2rem;
+      padding-right: 1.5rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      margin-top: 0.5rem;
     }
   } 
   }
-
 
 @media (max-width: 425px) {
   .header .logo {
@@ -228,8 +235,8 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 20px;
-    padding: 1.5rem;
+    margin: 10px;
+    padding: 1rem;
     
     & .hamburger {
       padding-right: 0.1rem;
@@ -470,10 +477,10 @@ body {
 /* Popup */
 .popup {
   position: fixed;
-  top: 0;
+  top: 30%;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 20vh;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 9999;
   transition: 0.3s;
@@ -482,17 +489,17 @@ body {
 
 .popup-content {
   position: absolute;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  width: 90%;
-  max-width: 110rem;
+  width: 100%;
+  max-width: 80rem;
   margin: 0 auto;
-  height: 55rem;
+  height: 35rem;
   transform: translate(-50%, -50%);
-  padding: 1.6rem;
+  padding: 1rem;
   display: table;
   overflow: hidden;
-  background-color: var(--secondary-color);
+  background-color: var(--hover-color);
 }
 
 .popup-close {
@@ -516,8 +523,9 @@ body {
 .popup-left {
   display: table-cell;
   width: 60%;
-  height: 100%;
+  height: 60%;
   vertical-align: middle;
+  padding: 1rem;
 }
 
 .popup-right {
@@ -534,8 +542,8 @@ body {
 
 .popup-img-container img.popup-img {
   display: block;
-  width: 60rem;
-  height: 45rem;
+  width: 40rem;
+  height: 25rem;
   max-width: 100%;
   border-radius: 1rem;
   object-fit: cover;
@@ -548,7 +556,7 @@ body {
 }
 
 .right-content h2 {
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: var(--text-color);
   margin-bottom: 1.6rem;
 }
@@ -558,20 +566,21 @@ body {
 }
 
 .right-content p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   color: var(--text-color);
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.8rem;
+  padding: 0 3rem;
 }
 
 .popup-form {
-  width: 80%;
-  padding: 1.5rem 0;
+  width: 50%;
+  padding: 1.2rem 0;
   text-indent: 1rem;
   margin-bottom: 1.6rem;
   border-radius: 3rem;
   background-color: var(--primary-color);
   color: var(--text-color);
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: none;
   text-align: center;
 }
@@ -585,13 +594,13 @@ body {
 }
 
 .right-content a {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .right-content a:link,
 .right-content a:visited {
   display: inline-block;
-  padding: 1.3rem 3rem;
+  padding: 1.2rem 2rem;
   border-radius: 3rem;
   font-weight: 700;
   color: var(--text-color);
@@ -614,91 +623,87 @@ body {
   visibility: hidden;
 }
 
-@media only screen and (max-width: 1200px) {
-  .right-content {
-    width: 100%;
-  }
+@media only screen and (max-width: 1440px) {
+  .popup {
+    width: 70%;
+    height: 30rem;
+    left: 15%;
 
-  .right-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1.3rem;
   }
-}
-
-@media only screen and (max-width: 998px) {
-  .popup-right {
-    width: 100%;
-  }
-
-  .popup-left {
-    display: none;
-  }
-
-  .right-content h1 {
-    font-size: 5rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .right-content h1 {
-    font-size: 4rem;
-  }
-
-  .right-content p {
-    font-size: 1.6rem;
-  }
-
-  .popup-form {
-    width: 90%;
-    margin: 0 auto;
-    padding: 1.8rem 0;
-    margin-bottom: 1.5rem;
-  }
-
-  .goto-top:link,
-  .goto-top:visited {
-    right: 5%;
-    bottom: 5%;
-  }
-}
-
-@media only screen and (max-width: 568px) {
-  .popup-right {
-    padding: 0 1.6rem;
-  }
-
   .popup-content {
-    height: 35rem;
-    width: 90%;
-    margin: 0 auto;
+    height: 30rem;
   }
 
-  .right-content {
+  .popup-right .right-content {
     width: 100%;
   }
 
-  .right-content h1 {
-    font-size: 3rem;
+  .popup-img-container img.popup-img {
+    width: 30rem;
+    height: 20rem;
+    padding-left: 3rem;
+  }
+
+  
+
+  .right-content h2 {
+    font-size: 2rem;
   }
 
   .right-content p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 
   .popup-form {
-    width: 100%;
-    padding: 1.5rem 0;
-    margin-bottom: 1.3rem;
+    width: 60%;
   }
 
-  .right-content a:link,
-  .right-content a:visited {
-    padding: 1.5rem 3rem;
+  .right-content a {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .popup {
+    width: 90%;
+    height: 20rem;
+    left: 5%;
+  }
+  .popup-content {
+    height: 30rem;
   }
 
   .popup-close {
     top: 1rem;
     right: 1rem;
-    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .popup-img-container img.popup-img {
+    width: 30rem;
+    height: 20rem;
+    padding-left: 0;
+  }
+
+  .right-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .right-content p {
+    font-size: 1.2rem;
+  }
+
+  .popup-form {
+    width: 60%;
+  }
+
+  .right-content a {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .poppu {
+    display: none;
   }
 }

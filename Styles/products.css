@@ -72,7 +72,7 @@ ul {
 
 /* Hero Section */
 .container {
-  padding: 250px 0;
+  padding: 120px 0;
   margin: 10px auto 0 auto;
   width: 80%;
   text-align: center;
@@ -169,6 +169,96 @@ ul {
   }
 }
 
+/* Hero Responsive */
+@media screen and (max-width: 1024px) {
+  .container{
+    width: 100%;
+  }
+
+  .hero__content {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .container{
+    width: 100%;
+  & .hero__content {
+    font-size: 1.2rem;
+    }
+  }  
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .hero {
+    & .hero__header {
+      font-size: 1.5rem;
+    }
+
+    & .hero__content {
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    & .hero__sidebar {
+      & .search h3 {
+        font-size: 1.5rem;
+      }
+
+      & .sort {
+        & .sort__label {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .container {
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  
+  .container {
+    padding: 120px 0;
+
+    & .hero {
+
+     & .hero__header {
+      font-size: 1.5rem;
+      }
+
+      & .hero__content {
+      font-size: 1rem;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      } 
+    
+      & .hero__sidebar {
+        & .search h3 {
+         font-size: 1.5rem;
+        }
+        & .sort {
+         & .sort__label {
+          font-size: 1.5rem;
+          }
+        }
+      }
+    }    
+  }
+} 
+
+
 /* Slice show */
 .mySlides {
   display: none;
@@ -234,84 +324,6 @@ ul {
   .text {font-size: 11px}
 }
 
-/* Hero Responsive */
-@media screen and (max-width: 1024px) {
-  .container{
-    width: 100%;
-  }
-
-  .hero__content {
-    font-size: 1.3rem;
-  }
-}
-
-@media screen and (max-width: 996px) {
-  .container{
-    width: 100%;
-  & .hero__content {
-    font-size: 1.2rem;
-    }
-  }  
-}
-
-@media screen and (max-width: 768px) {
-
-  .container {
-    padding-top: 0;
-    margin-top: 0; 
-    width: 80%;
-
-    .hero {
-      & .hero__header {
-        margin-bottom: 0.5rem;
-      }
-      & .hero__content {
-      font-size: 1.3rem;
-      width: 100%;
-      margin: 0 auto;
-      margin-bottom: 1rem;
-      }     
-    }
-  }    
-}
-
-@media screen and (max-width: 567px) {
-  .container {
-    padding: 0;
-    margin-top: 0;
-  }
-}
-
-@media screen and (max-width: 425px) {
-  
-  .container {
-    padding: 160px 0;
-
-    & .hero {
-
-     & .hero__header {
-      font-size: 1.5rem;
-      }
-
-      & .hero__content {
-      font-size: 1rem;
-      padding: 0.5rem;
-      margin-bottom: 1rem;
-      } 
-    
-      & .hero__sidebar {
-        & .search h3 {
-         font-size: 1.5rem;
-        }
-        & .sort {
-         & .sort__label {
-          font-size: 1.5rem;
-          }
-        }
-      }
-    }    
-  }
-}
 
 
 /* PRODUCTS LIST */

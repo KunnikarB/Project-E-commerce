@@ -55,7 +55,7 @@
         
         <div class="icon--cart">
           <a href="#">
-            <i class="fa-solid fa-cart-shopping fa-2x">
+            <i class="fa-solid fa-cart-shopping">
               <span class="icon--cart-quantity">0</span>
             </i>
           </a> 
@@ -63,8 +63,8 @@
       
         <div class="hamburger">
           <a href="#">
-            <i class="fa-solid fa-bars fa-2x burger"></i>
-            <span class="xmark"><i class="fa-solid fa-xmark fa-2x close"></i></span>
+            <i class="fa-solid fa-bars burger"></i>
+            <span class="xmark"><i class="fa-solid fa-xmark close"></i></span>
           </a>
         </div>
      </div>
@@ -78,8 +78,10 @@
 
   <!-- Hero Section -->
   <main class="container">
+
     <!-- Darkmode -->
-    <button class="darkmode-button">Dark Mode</button>
+    <button class="darkmode-button" onclick="myFunction()">Dark Mode</button>
+
     <section class="hero">
       <h1 class="hero__header">Welcome 🛍️</h1>
       
@@ -200,6 +202,8 @@
     </div>
 
 <!-- Scripts -->
-  <script src="Scripts/script.js"></script>
+  <script src="Scripts/darkmode.js"></script>
+  <script type="module" src="Scripts/script.js"></script>
+ 
 </body>
 </html>
