@@ -5,7 +5,7 @@ let productsContainer = '';
 products.forEach((product) => {
   productsContainer += `<div class="product">
             <div class="product--overlay product-item">
-              <img class="product--img" src="${product.image}" alt="MacBook">
+              <img class="product--img" src="${product.image}" alt="${product.name}">
               <span class="product--discount">${product.discount}</span>
 
               <ul class="icons">
