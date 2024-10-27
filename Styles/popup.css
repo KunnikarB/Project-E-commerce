@@ -31,8 +31,8 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 1rem;
+  right: 1rem;
   padding: 1rem;
   background-color: var(--primary-color);
   border-radius: 50%;
@@ -40,7 +40,7 @@
 }
 
 .popup-close {
-  font-size: 2rem;
+  font-size: 1rem;
   color: var(--text-color);
 }
 
@@ -152,7 +152,7 @@
     width: 70%;
     height: 30rem;
     left: 15%;
-
+    top: 40%;
   }
   .popup-content {
     height: 30rem;
@@ -192,6 +192,7 @@
     width: 90%;
     height: 20rem;
     left: 5%;
+    top: 40%;
   }
   .popup-content {
     height: 30rem;
@@ -211,6 +212,7 @@
 
   .right-content h2 {
     font-size: 1.5rem;
+    margin-top: 2rem;
   }
 
   .right-content p {
@@ -218,7 +220,7 @@
   }
 
   .popup-form {
-    width: 60%;
+    width: 100%;
   }
 
   .right-content a {
