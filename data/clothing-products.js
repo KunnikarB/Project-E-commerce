@@ -1,6 +1,6 @@
 export const products = [
   {
-    id: 1,
+    id: 'woman-01',
     image: './images/woman-01.jpg',
     name: 'PARTY DRESS',
     des: 'Summer Party Dress Relaxing style',
@@ -8,7 +8,7 @@ export const products = [
     discount: 'New',
   },
   {
-    id: 2,
+    id: 'woman-02',
     image: './images/woman-02.jpg',
     name: 'MAXI DRESS',
     des: 'Fancy Summer Party Maxi Dress',
@@ -16,7 +16,7 @@ export const products = [
     discount: '50%',
   },
   {
-    id: 3,
+    id: 'woman-03',
     image: './images/woman-03.jpg',
     name: 'WEDDING DRESS',
     des: 'Luxury Wedding Dress',
@@ -24,7 +24,7 @@ export const products = [
     discount: 'New',
   },
   {
-    id: 4,
+    id: 'woman-04',
     image: './images/woman-04.jpg',
     name: 'WORK DRESS',
     des: 'Very Cute Summer Work Dress',
@@ -32,7 +32,7 @@ export const products = [
     discount: '50%',
   },
   {
-    id: 5,
+    id: 'woman-05',
     image: './images/woman-05.jpg',
     name: 'SPECIAL OCCASION DRESS',
     des: 'Fancy Special Occastion Dress',
@@ -40,7 +40,7 @@ export const products = [
     discount: '20%',
   },
   {
-    id: 6,
+    id: 'woman-06',
     image: './images/woman-06.jpg',
     name: 'SUMMER DRESS',
     des: 'Fancy Sumer Dress',
@@ -48,7 +48,7 @@ export const products = [
     discount: '50%',
   },
   {
-    id: 7,
+    id: 'woman-07',
     image: './images/woman-07.jpg',
     name: 'VINTAGE DRESS',
     des: 'Preloved luxury Vintage Dress',
@@ -56,7 +56,7 @@ export const products = [
     discount: '40%',
   },
   {
-    id: 8,
+    id: 'woman-08',
     image: './images/woman-08.jpg',
     name: 'EVENING DRESS',
     des: 'Fancy luxury Evening Dress',
