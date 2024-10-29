@@ -1,3 +1,4 @@
+import { cart, addToCart } from '../data/cart.js';
 import { products } from '../data/clothing-products.js';
 
 // Generate the products HTML and add to the DOM
@@ -5,7 +6,7 @@ let productsContainer = '';
 products.forEach((product) => {
   productsContainer += `<div class="product">
             <div class="product--overlay product-item">
-              <img class="product--img" src="${product.image}" alt="MacBook">
+              <img class="product--img" src="${product.image}" alt="${product.name}">
               <span class="product--discount">${product.discount}</span>
 
               <ul class="icons">
@@ -47,3 +48,24 @@ products.forEach((product) => {
 
 // Add products to the DOM
 document.querySelector('.js-products--list').innerHTML = productsContainer;
+
+
+
+// Update cart quantity
+function updateCartQuantity() {
+  let cartQuantity = 0;
+  cart.forEach((cartItem) => {
+    cartQuantity += cartItem.quantity;
+  });
+
+  document.querySelector('.js-cart-quantity').textContent = cartQuantity;
+}
+
+// Add to cart button event listener
+document.querySelectorAll('.js-add-to-cart').forEach((button) => {
+  button.addEventListener('click', () => {
+    const productId = button.dataset.productId;
+    addToCart(productId);
+    updateCartQuantity(); 
+  })
+});

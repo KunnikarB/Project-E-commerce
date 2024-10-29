@@ -1,3 +1,5 @@
+import { cart } from '../data/cart.js';
+
 import { products } from '../data/electronics-products.js';
 
 // Generate the products HTML and add to the DOM
@@ -5,7 +7,7 @@ let productsContainer = '';
 products.forEach((product) => {
   productsContainer += `<div class="product">
             <div class="product--overlay">
-              <img class="product--img" src="${product.image}" alt="MacBook">
+              <img class="product--img" src="${product.image}" alt="${product.name}">
               <span class="product--discount">${product.discount}</span>
             </div>
             <h4 class="product--name">${product.name}</h4>
@@ -40,3 +42,31 @@ products.forEach((product) => {
 
 // Add products to the DOM
 document.querySelector('.js-products--list').innerHTML = productsContainer;
+
+// Add to cart functionality
+document.querySelectorAll('.js-add-to-cart').forEach((button) => {
+  button.addEventListener('click', () => {
+    const productId = button.dataset.productId;
+
+    let matchingItem;
+    cart.forEach((item) => {
+      if (item.productId === productId) {
+        matchingItem = item;
+      }
+    });
+
+    if (matchingItem) {
+      matchingItem.quantity += 1;
+    } else {
+      cart.push({ productId, quantity: 1 });
+    }
+
+    let cartQuantity = 0;
+    cart.forEach((item) => {
+      cartQuantity += item.quantity;
+    });
+
+    document.querySelector('.js-cart-quantity').textContent = cartQuantity;
+
+  });
+});
