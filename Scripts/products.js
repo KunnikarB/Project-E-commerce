@@ -1,5 +1,5 @@
 import { cart, addToCart } from '../data/cart.js';
-import { products } from '../data/clothing-products.js';
+import { products } from '../data/data-products.js';
 
 // Generate the products HTML and add to the DOM
 let productsContainer = '';
