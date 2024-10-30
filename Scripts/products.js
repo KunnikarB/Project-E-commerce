@@ -149,3 +149,18 @@ document
     displayClothing(sortedProducts);
   });
 
+// Search products
+function searchProducts() {
+  const searchInput = document.getElementById('search-item').value.toLowerCase();
+  
+  // Filter products based on search input
+  const filteredProducts = products.filter(product => 
+    product.name.toLowerCase().includes(searchInput)
+  );
+  
+  // Display filtered products
+  displayClothing(filteredProducts);
+}
+
+// Event listener for the search input
+document.getElementById('search-item').addEventListener('keyup', searchProducts);

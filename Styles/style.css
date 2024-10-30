@@ -319,14 +319,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 120rem;
+    max-width: 30rem;
     margin: auto;
     padding: 0 3rem;
     margin-right: 3rem;
 
     & .cat {
-      max-width: 35rem;
-      height: 30rem;
+
       overflow: hidden;
       position: relative;
       cursor: pointer;
@@ -334,9 +333,7 @@ body {
       margin-left: 1rem;
 
       & img {
-        max-width: 400px;
-        width: 50rem;
-        height: 100%;
+        width: 70%;
         margin: auto;
         object-fit: cover;
         transition: all 2s ease;
