@@ -74,16 +74,6 @@ function showMessage(productId) {
   }, 2000);
 }
 
-
-// Add to cart button event listener
-// document.querySelectorAll('.js-add-to-cart').forEach((button) => {
-//   button.addEventListener('click', () => {
-//     const productId = button.dataset.productId;
-//     addToCart(productId);
-//     updateCartQuantity(); 
-//   })
-// });
-
 // Function to display products
 function displayClothing(products) {
   const productsContainer = document.getElementById('clothing-products');
