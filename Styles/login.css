@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #dd4c93;
+  --secondary-color: #ffaebc;
+  --hover-color: #866bac;
+  --text-color: #ffffff;
+}
+
+a,
+a:active,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Login Form */
+.login-form {
+  padding: 0.1rem 3rem;
+  max-width: 30rem;
+  margin: 3rem auto;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(217, 29, 136, 0.1);
+  text-align: center;
+}
+
+.login-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form h1 {
+  background: linear-gradient(
+      90deg,
+      rgb(252, 115, 156) 0%,
+      rgb(139, 102, 241) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+}
+.login-form form p {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.login-form form label {
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-color);
+}
+
+.login-form form input {
+  border: 1px solid var(--hover-color);
+  outline: none;
+  padding: 1rem 0;
+  text-indent: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+
+.login-form form input::placeholder {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  opacity: 0.7;
+}
+
+.login-form form .terms {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.login-form form .buttons {
+  margin-top: 1rem;
+}
+
+.login-form form button {
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem 3rem;
+  margin-right: 1.5rem;
+  background: linear-gradient(
+    90deg,
+    rgb(252, 115, 156) 0%,
+    rgb(139, 102, 241) 100%
+  );
+  color: var(--text-color);
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-bottom: 2rem;
+}
+
+.login-form form button:hover {
+  transform: scale(1.05);
+}
+
+.login-form form p a {
+  color: var(--hover-color);
+}
+
+
+@media screen and (max-width: 768px) {
+  .login-form {
+    padding: 2rem;
+  }
+
+  .login-form h1 {
+    font-size: 6rem;
+  }
+
+  .login-form form p {
+    font-size: 1.5rem;
+  }
+
+  .login-form form label {
+    font-size: 1.4rem;
+  }
+
+  .login-form form input {
+    font-size: 1.4rem;
+  }
+
+  .login-form form input::placeholder {
+    font-size: 1.2rem;
+  }
+
+  .login-form form button {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .login-form {
+    padding: 1.5rem;
+  }
+
+  .login-form h1 {
+    font-size: 4rem;
+  }
+
+  .login-form form p {
+    font-size: 1.3rem;
+  }
+
+  .login-form form label {
+    font-size: 1.2rem;
+  }
+
+  .login-form form input {
+    font-size: 1.2rem;
+  }
+
+  .login-form form input::placeholder {
+    font-size: 1rem;
+  }
+
+  .login-form form button {
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-form {
+    padding: 1rem;
+  }
+
+  .login-form h1 {
+    font-size: 3rem;
+  }
+
+  .login-form form p {
+    font-size: 1.2rem;
+  }
+
+  .login-form form label {
+    font-size: 1.1rem;
+  }
+
+  .login-form form input {
+    font-size: 1.1rem;
+  }
+
+  .login-form form input::placeholder {
+    font-size: 0.9rem;
+  }
+
+  .login-form form button {
+    font-size: 1.1rem;
+    padding: 1rem 1.3rem;
+  }
+}
