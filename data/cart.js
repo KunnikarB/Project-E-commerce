@@ -1,12 +1,13 @@
 export let cart = [
   {
     productId: 1,
-    quantity: 2,
+    quantity: 0,
   },
   {
     productId: 2,
-    quantity: 1,
-  }
+    quantity: 0,
+  },
+
 ];
 
 // Add to cart functionality 
