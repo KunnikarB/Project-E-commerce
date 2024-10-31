@@ -16,7 +16,7 @@ cart.forEach((cartItem) => {
   cartSummaryHTML += `
     <div class="cart-item-container js-cart-item-container-${matchingProduct.id}">
             <div class="delivery-date">
-              Delivery date: Tuesday, June 21
+              Delivery date: Tuesday, November 5
             </div>
 
             <div class="cart-item-details-grid">
@@ -58,7 +58,7 @@ cart.forEach((cartItem) => {
                     name="delivery-option-${matchingProduct.id}">
                   <div>
                     <div class="delivery-option-date">
-                      Tuesday, June 21
+                      Tuesday, November 5
                     </div>
                     <div class="delivery-option-price">
                       FREE Shipping
@@ -71,7 +71,7 @@ cart.forEach((cartItem) => {
                     name="delivery-option-${matchingProduct.id}">
                   <div>
                     <div class="delivery-option-date">
-                      Wednesday, June 15
+                      Wednesday, October 30
                     </div>
                     <div class="delivery-option-price">
                       $5 - Shipping
@@ -84,7 +84,7 @@ cart.forEach((cartItem) => {
                     name="delivery-option-1">
                   <div>
                     <div class="delivery-option-date">
-                      Monday, June 13
+                      Monday, october 28
                     </div>
                     <div class="delivery-option-price">
                       $10 - Shipping
