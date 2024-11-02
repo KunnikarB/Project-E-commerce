@@ -7,6 +7,7 @@ cart.forEach((cartItem) => {
   const productId = cartItem.productId;
 
   let matchingProduct;
+
   products.forEach((product) => {
     if (product.id === productId) {
       matchingProduct = product;
@@ -81,7 +82,7 @@ cart.forEach((cartItem) => {
                 <div class="delivery-option">
                   <input type="radio"
                     class="delivery-option-input"
-                    name="delivery-option-1">
+                    name="delivery-option-${matchingProduct.id}">
                   <div>
                     <div class="delivery-option-date">
                       Monday, october 28
@@ -97,11 +98,14 @@ cart.forEach((cartItem) => {
   `;
 });
 
+// Add the cart summary HTML to the page
 document.querySelector('.js-order-summary').innerHTML = cartSummaryHTML;
 
+// Add event listeners to the delete links
 document.querySelectorAll('.js-delete-link').forEach((deleteLink) => {
   deleteLink.addEventListener('click', () => {
     const productId = deleteLink.dataset.productId;
+    // Call the removeFromCart function in cart.js
     removeFromCart(productId);
     
     const container = document.querySelector(`.js-cart-item-container-${productId}`);

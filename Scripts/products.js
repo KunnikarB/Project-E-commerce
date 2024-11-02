@@ -89,7 +89,7 @@ function displayClothing(products) {
             </div>
             <h4 class="product--name">${product.name}</h4>
             <p class="product--description">${product.des}</p>
-            <p class="product--price">Price: $${product.price}</p>
+            <p class="product--price">Price: $${product.price.toFixed(2)}</p>
 
             <div class="product--quantity">
               <label for="quantity">Quantity:</label>

@@ -1,11 +1,11 @@
 export let cart = [
   {
     productId: 1,
-    quantity: 0,
+    quantity: 2,
   },
   {
     productId: 2,
-    quantity: 0,
+    quantity: 1,
   },
 
 ];
@@ -20,16 +20,16 @@ export let cart = [
   });
 
   // If the item is already in the cart, increase the quantity
-  const quantitySelector = document.querySelector(`.js-quantity-selector-${productId}`);
+  // const quantitySelector = document.querySelector(`.js-quantity-selector-${productId}`);
 
-  const quantity = Number(quantitySelector.value);
+  // const quantity = Number(quantitySelector.value);
 
   if (productInCart) {
-    productInCart.quantity += quantity;
+    productInCart.quantity += 1;
   } else {
     cart.push({
-      productId,
-      quantity,
+      productId: productId,
+      quantity: 1
     });
   }
 }
