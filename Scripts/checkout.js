@@ -105,13 +105,12 @@ document.querySelector('.js-order-summary').innerHTML = cartSummaryHTML;
 document.querySelectorAll('.js-delete-link').forEach((deleteLink) => {
   deleteLink.addEventListener('click', () => {
     const productId = deleteLink.dataset.productId;
+    
     // Call the removeFromCart function in cart.js
     removeFromCart(productId);
-    
-    const container = document.querySelector(`.js-cart-item-container-${productId}`);
 
+    // Remove the item from the DOM
+    const container = document.querySelector(`.js-cart-item-container-${productId}`);
     container.remove();
   });
-
- 
 });

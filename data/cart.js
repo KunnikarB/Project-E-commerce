@@ -45,4 +45,3 @@ export function removeFromCart(productId) {
   cart = newCart;
 }
 
-// Update quantity functionality
