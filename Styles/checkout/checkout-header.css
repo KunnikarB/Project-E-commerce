@@ -100,6 +100,10 @@ body {
 .checkout-header-right-section {
   text-align: right;
   width: 150px;
+
+  & a {
+    color: var(--text-color);
+  }
 }
 
 @media (max-width: 1000px) {
