@@ -76,7 +76,13 @@ body {
   font-weight: 500;
   display: flex;
   justify-content: center;
+
+  & a {
+    color: var(--text-color);
+  }
 }
+
+
 
 
 
