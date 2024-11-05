@@ -75,8 +75,8 @@ function showMessage(productId) {
 }
 
 // Function to display products
-function displayClothing(products) {
-  const productsContainer = document.getElementById('clothing-products');
+function displayProducts(products) {
+  const productsContainer = document.getElementById('js-products');
   productsContainer.innerHTML = '';
 
   products.forEach((product) => {
@@ -131,11 +131,11 @@ function displayClothing(products) {
 }
 
 // Display products on page load
-displayClothing(products);
+displayProducts(products);
 
 // Sort products based on selection
 document
-  .getElementById('sort-clothing')
+  .getElementById('sort')
   .addEventListener('change', function () {
     const sortValue = this.value;
     let sortedProducts;
@@ -146,7 +146,7 @@ document
       sortedProducts = products.sort((a, b) => b.price - a.price);
     }
 
-    displayClothing(sortedProducts);
+    displayProducts(sortedProducts);
   });
 
 // Search products
